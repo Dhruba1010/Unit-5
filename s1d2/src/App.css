@@ -1,0 +1,15 @@
+/* .app {
+    display: flex;
+} */
+
+.square{
+    list-style: square;
+}
+
+.disk{
+    list-style: disc;
+}
+
+.circle {
+    list-style: circle;
+}

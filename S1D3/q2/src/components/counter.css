@@ -1,0 +1,33 @@
+.button {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+
+.button button{
+    padding: 1% 2%;
+    font-size: large;
+    border: 1px solid black;
+}
+
+.clearButton {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    top:5%
+}
+
+.clearButton button{
+    margin-top: 5%;
+    padding: 1% 2%;
+    font-size: large;
+    border: 1px solid black;
+}
+
+.red{
+    color:red;
+}
+
+.green{
+    color: green;
+}

@@ -1,0 +1,60 @@
+.container{
+  height: 100px;
+  width: 90%;
+  left: 5%;
+  top : 7%;
+  position: absolute;
+  background-color: #d6e2ec;
+}
+
+.navbar{
+  display:flex;
+  justify-content: space-around;
+  margin: auto;
+  height: 50px;
+  width:95%;
+  gap: 5%;
+  background-color: #24252a;
+  color:white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  position:absolute;
+  align-items: center;
+  left: 3%;
+  top : 23%;
+};
+
+.main {
+  display:flex;
+  height:100%;
+  width:15%;
+  justify-content:center;
+  align-items: center;
+  font-weight: 400;
+}
+
+.paraDiv {
+  display:flex;
+  height:100%;
+  width:40%;
+  justify-content:space-around;
+  align-items: center;
+}
+
+.contact{
+  display:flex;
+  width:15%;
+  height:100%;
+  justify-content:center;
+  text-align: center;
+}
+
+.button {
+  background-color:#008aaa;
+  border-radius:50px;
+  border: none;
+  height:60%;
+  width:50%;
+  color:white;
+  margin-top: 12px;
+  cursor: pointer;
+}

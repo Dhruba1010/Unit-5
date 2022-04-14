@@ -1,20 +1,42 @@
 import './index.css';
-// import logo from './logo';
+// import logo from './logo.png';
 
-// let logo = document.querySelector('#logo');
-// let image = document.createElement('img');
-// image.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png';
-// logo.append(image);
 
-let container = document.querySelector('#container');
-let lImg = container.createElement('div');
-let rImg = lImg.createElement('img');
-rImg.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png';
-container.append(lImg);
-// let tasks = container.createElement('div');
+let container = document.getElementById('container');
+let div1 = document.createElement('div');
+let tasks = document.createElement('div');
+let newTask = document.createElement('div');
+let div2 = document.createElement('div');
 
-// let newtasks = container.createElement('div');
-document.querySelector('#add').onclick = function(){
+let image = document.createElement('img');
+image.src = 'https://www.google.com/logos/doodles/2015/googles-new-logo-5078286822539264.3-hp2x.gif';
+image.setAttribute('id', 'logo');
+div1.append(image);
+
+div2.setAttribute('id', 'inputDiv');
+
+let taskbar = document.createElement('input');
+taskbar.placeholder = 'Enter your task...';
+taskbar.setAttribute('id', 'inputbox');
+
+let addbutton = document.createElement('button');
+addbutton.innerText='Add';
+addbutton.setAttribute('id', 'button');
+
+tasks.setAttribute('id', 'tasks');
+tasks.append(taskbar,addbutton);
+
+newTask.setAttribute('id', 'newtasks')
+
+div2.append(tasks,newTask);
+
+container.append(div1,div2);
+
+// container.append(div1);
+
+
+
+document.querySelector('#button').onclick = function(){
     if(document.querySelector('#tasks input').value.length == 0){
         alert("Please Enter a Task")
     }
