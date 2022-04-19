@@ -1,18 +1,26 @@
 import {TodoIn} from './Todo';
-import {ShowTodo} from './TodoItem';
 import {useState} from 'react';
+import './Todo.css'
 
-const getInputText = (Text) => {
-    console.log('got the text', Text);
-};
+
 
 export const Todo = () => {
     const [Todo, setTodo] = useState([]);
+
+    const getInputText = (Text) => {
+        console.log('got the text', Text);
+        setTodo([...Todo,Text])
+    };
+
     return (
         <div>
             <TodoIn getInputText={getInputText}/>
-                {Todo.map((List) => {
-                    return <ShowTodo Todo={List}/>;
+                {Todo.map((e) => {
+                    return (
+                        <div>
+                            <h2>{e}</h2>
+                        </div>
+                    )
                 })}
         </div>
     );

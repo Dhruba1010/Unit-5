@@ -1,0 +1,17 @@
+
+
+.AddTask {
+    /* align-items: center;
+    justify-content: center; */
+    /* top:25%; */
+    display:flex
+}
+
+.AddTaskInput{
+    height:50px;
+    width:400px;
+}
+
+.AddTaskButton{
+    width:60px;
+}
