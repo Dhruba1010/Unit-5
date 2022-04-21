@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Todo.css'
 
- export const TodoIn = ({getInputText}) => {
+ export const TodoInput = ({getInputText}) => {
     const [inputTxt, setInputTxt] = useState('');
 
     return (
