@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "Name": [
+        "Dhruba"
+      ],
+      "Age": [
+        "23"
+      ],
+      "Address": [
+        "jajigram"
+      ],
+      "Department": [
+        "Full Stack Developer"
+      ],
+      "Salary": [
+        "500000"
+      ],
+      "MaritalStatus": "",
+      "id": 1
+    },
+    {
+      "Name": [
+        "Dhruba"
+      ],
+      "Age": [
+        "23"
+      ],
+      "Address": [
+        "jajigram"
+      ],
+      "Department": [
+        "Full Stack Developer"
+      ],
+      "Salary": [
+        "500000"
+      ],
+      "MaritalStatus": "",
+      "id": 2
+    }
+  ]
+}
