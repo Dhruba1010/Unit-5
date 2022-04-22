@@ -1,26 +1,28 @@
 import { useEffect, useState } from 'react';
 
-export const Timer = () =>{
-    const [timer, setTimer] = useState(0);
+export const Timer = ({start, stop}) =>{
+    const [timer, setTimer] = useState(+start);
 
-    // const addCounter =() =>{
-    //     setTimer(timer+1);
-    // };
-
-    const addCounter = useEffect(() =>{
-        const increase = setInterval(()=>{
-            setTimer(timer+1)
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setTimer((t) => {
+                if(t=== +stop){
+                    clearInterval(timer);
+                    return t;
+                } else {
+                    return t+1;
+                }
+            })
         },1000)
 
-        return(
-            clearInterval(increase)
-        );
-    },[]);
+        return () => {
+            clearInterval(timer);
+        }
+    },[])
 
     return (
         <div className='App'>
-            <h2>Counter: {timer}</h2>
-            <button onClick={addCounter}>Start</button>
+            <h3>Timer: {timer}</h3>
         </div>
     );
 };
