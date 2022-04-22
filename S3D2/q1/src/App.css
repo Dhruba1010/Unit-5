@@ -1,0 +1,17 @@
+.navbar {
+  width: 90%;
+  height: 25px;
+  margin: auto;
+  margin-top: 3%;
+  
+  display: flex;
+  background-color:blueviolet
+}
+
+.navbar .right {
+  display: flex;
+  flex-direction: row; 
+  justify-content: flex-start;
+  width: 40%;
+}
+
